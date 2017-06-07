@@ -1,0 +1,29 @@
+<view class="container">
+  <image class="login-bg" src="../images/login_bg.png" mode="aspectFill"></image>
+  <view class="login-infor">
+    <view class="code-area">
+      <input class="code"
+             maxlength="4"
+             type="number"
+             placeholder="输入验证码"
+             focus="true"
+             bindinput="bindKeyInput"
+             value="{{ code }}"
+             placeholder-style="color: #B4B5B8" />
+      <block>
+        <icon style="display: {{ hideClearIcon? 'none' : 'block' }}"
+              class="clear"
+              type="clear"
+              size="14"
+              bindtap="clearCode"/>
+      </block>
+      <view class="tip" hidden="{{ tipSwitch }}"><view class="countNumber">{{ countDownNumber }}</view>s后重发</view>
+      <view class="tip" hidden="{{ !tipSwitch }}">重新发送</view>
+    </view>
+    <text class="message">已发送验证码短信到手机号：{{ phoneNumber }}</text>
+    <view class="button-box">
+      <navigator url="/pages/index/index" class="last-step">上一步</navigator>
+      <navigator class="enter-post">进入微篇</navigator>
+    </view>
+  </view>
+</view>

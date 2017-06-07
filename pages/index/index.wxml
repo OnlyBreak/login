@@ -1,0 +1,33 @@
+<view class="container">
+  <image class="login-bg" src="../images/login_bg.png" mode="aspectFill"></image>
+  <view class="login-infor">
+    <view class="infor">
+      <view class="code-area">
+        <view class="country">中国</view>
+        <view class="code">+86</view>
+      </view>
+      <input class="telephone"
+             type="number"
+             placeholder="请输入手机号"
+             focus="{{ phoneInputFocus }}"
+             placeholder-style="color: #B4B5B8"
+             maxlength="11"
+             bindinput="bindKeyInput"
+             value="{{ phoneNumber }}"/>
+      <icon type="clear" size="14" bindtap="clearPhoneNumber" style="display: {{ showClearIcon? 'block' : 'none' }}"/>
+    </view>
+    <view class="button-box">
+      <button class="wechat-login-button"
+              plain="true"
+              hover-class="wechat-login-button-hover"
+              bindtap="wechatLogin">微信登录</button>
+      <button class="next-step" style="display: {{ nextStepActive ? 'none' : 'block' }}">下一步</button>
+      <navigator class="next-step active"
+                 style="display: {{ nextStepActive ? 'block' : 'none' }}"
+                 bindtap="sendVerifyCode"
+                 url="/pages/code/code"
+                 hover-class="next-step-hover">下一步</navigator>
+    </view>
+    <view class="service-agreement">阅读<navigator class="agreement" hover-class="agreement-hover">微篇服务协议</navigator></view>
+  </view>
+</view>

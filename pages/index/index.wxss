@@ -1,0 +1,87 @@
+.login-bg {
+  height: 460rpx;
+  width: 100%;
+}
+.login-infor {
+  width: 100%;
+}
+.infor {
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  padding: 26rpx 24rpx 26rpx 0;
+  border-bottom: 1rpx solid #DCDEE1;
+}
+.code-area {
+  box-sizing: border-box;
+  padding: 0  20rpx 0 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rpx solid #DCDEE1;
+}
+.country {
+  max-width: 110rpx;
+  text-align: center;
+  margin-right: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.telephone {
+  flex: auto;
+  padding-left: 20rpx;
+}
+
+.button-box {
+  margin: 40rpx 0 20rpx;
+  display: flex;
+  padding: 0 24rpx;
+}
+.button-box .wechat-login-button {
+  color: #6F92D7;
+  font-size: 28rpx;
+  width: 222rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 1rpx solid #7599E1;
+  border-radius: 4rpx;
+  margin-right: 24rpx;
+}
+
+.button-box .next-step {
+  color: #87A5E1;
+  font-size: 28rpx;
+  line-height: 88rpx;
+  border: 1rpx solid #7599E1;
+  border-radius: 4rpx;
+  background-color: #4975CC;
+  border: 0;
+  flex: auto;
+}
+.next-step.active {
+  color: #FFF;
+  text-align: center;
+}
+
+.wechat-login-button-hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.7;
+}
+.next-step-hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+}
+
+.service-agreement {
+  font-size: 24rpx;
+  color: #7D7E7F;
+  padding-left: 24rpx;
+}
+.agreement {
+  display: inline;
+  color: #6F92D7;
+}
+.agreement.agreement-hover {
+  opacity: 0.7;
+}

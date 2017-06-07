@@ -1,0 +1,57 @@
+.login-bg {
+  height: 460rpx;
+  width: 100%;
+}
+.login-infor {
+  width: 100%;
+}
+.code-area {
+  padding: 26rpx 24rpx;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #DCDEE1;
+}
+.code {
+  flex: auto;
+}
+.clear {
+  padding-right: 24rpx;
+}
+.tip {
+  border-left: 1px solid #DCDEE1;
+  padding-left: 24rpx;
+  color: #87A5E1;
+}
+.countNumber {
+  display: inline-block;
+  width: 42rpx;
+}
+.message {
+  padding: 0 24rpx;
+  margin: 20rpx 0 40rpx;
+  color: #7D7E7F;
+  font-size: 24rpx;
+  display: block;
+}
+.button-box {
+  padding: 0 24rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+.last-step {
+  padding: 24rpx 69rpx;
+  border: 1rpx solid #7599E1;
+  border-radius: 4rpx;
+  color: #6F92D7;
+  text-align: center;
+  margin-right: 24rpx;
+}
+.enter-post {
+  flex: auto;
+  padding: 24rpx 0;
+  background-color: #4975CC;
+  color: #FFF;
+  text-align: center;
+  border-radius: 8rpx;
+}
