@@ -1,0 +1,21 @@
+{
+  "name": "wxapp",
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "1.0.0",
+  "description": "gulp for wxapp",
+  "main": "index.js",
+  "repository": "https://github.com/OnlyBreak/login.git",
+  "author": "onlyBreak <zpz2050@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {}
+}
