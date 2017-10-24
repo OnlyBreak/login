@@ -11,7 +11,7 @@ gulp.task('watch', function() {
 
 gulp.task('build:style', function() {
   gulp
-    .src(['src/pages/**/*.wxss'], { base: 'src' })
+    .src(['src/pages/**/*.scss'], { base: 'src' })
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(['iOS >= 8', 'Android >= 4.1'])]))
     .pipe(cssnano({
